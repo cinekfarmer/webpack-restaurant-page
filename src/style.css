@@ -33,6 +33,10 @@ body {
     border: none;
 }
 
+.active {
+    background-color: #f2c480;
+}
+
 .content-box {
     background-color: #f2c480;
     margin: 0 20vw;
