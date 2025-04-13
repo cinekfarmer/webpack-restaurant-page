@@ -7,7 +7,7 @@
 body {
     font-family: sans-serif;
     background-color: #f2d3a1;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 .header {
@@ -23,7 +23,6 @@ body {
 .nav-menu {
     display: flex;
     margin-left: .2rem;
-    gap: 1.93em;
 }
 
 .nav-btn {
@@ -33,18 +32,52 @@ body {
     border: none;
 }
 
+.nav-btn:hover {
+    cursor: pointer;
+}
+
 .active {
     background-color: #f2c480;
 }
 
 .content-box {
     background-color: #f2c480;
-    margin: 0 20vw;
     padding: 1em 2em;
+    text-align: justify;
 }
 
 .content-title {
     color: #8b5220;
     border-bottom: .1em dashed #8b5220;
     margin-bottom: 1rem;
+}
+
+.content-description {
+    margin: 1rem
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 2em 1.3rem;
+}
+
+.product-price {
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 1.4em;
+    }
+    .content-box {
+        margin: 0 15vw;
+    }
+    .nav-menu {
+        gap: 2.7rem;
+    }
+    .content-box {
+        text-align: left;
+    }
 }
